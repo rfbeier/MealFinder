@@ -1,0 +1,12 @@
+.centered-div {
+    text-align: center;
+    max-width: 100%;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.location-container {
+    margin-top: 10px;
+}
