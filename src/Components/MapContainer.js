@@ -15,7 +15,7 @@ const center = {
 
 const MapContainer = () => {
     const { isLoaded, loadError } = useLoadScript({
-        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_KEY, // ADD THIS TO ENV VARS IN NETLIFY TOO!
+        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_KEY || process.env.NETLIFY_MAP_KEY, // ADD THIS TO ENV VARS IN NETLIFY TOO!
         libraries,
     });
     if (loadError) {
