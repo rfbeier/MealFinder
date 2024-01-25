@@ -4,6 +4,7 @@ import { AppBar, Toolbar, Typography, Container, Box } from '@mui/material';
 import MapContainer from './Components/MapContainer';
 import LocationListContainer from './Components/LocationListContainer';
 import location_data_raw from './Components/location_data_raw';
+import './Components/styles.css'
 
 const App = () => {
   const [ locationData, setLocationData ] = useState(location_data_raw);
@@ -14,7 +15,7 @@ const App = () => {
   });
 
   return (
-    <div>
+    <div className="main-background">
       <AppBar
         position="absolute"
         color="default" // change color?
@@ -31,7 +32,7 @@ const App = () => {
         </Toolbar>
       </AppBar>
       <Container maxWidth="lg">
-        <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} >
+        <Box sx={{ height: '100vh' }} >
           <div className="centered-div">
             <MapContainer />
             <LocationListContainer locationData={locationData} />

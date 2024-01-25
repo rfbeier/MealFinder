@@ -8,7 +8,7 @@ const LocationListContainer = ({locationData}) => {
 
     locationData.forEach((location) => {
         locationCards.push(
-            <Card sx={{ minWidth: 275 }}>
+            <Card sx={{ minWidth: 275, backgroundColor:'#f1f2f4' }}>
                 <CardContent>
                     <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                         Location: {location.Location}
