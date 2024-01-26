@@ -27,7 +27,7 @@ const App = () => {
       >
         <Toolbar>
           <Typography variant="h6" color="inherit" noWrap>
-            MealFinder
+            MealFinder and key: {process.env.ROB_TEST_VAR} - before
           </Typography>
         </Toolbar>
       </AppBar>
