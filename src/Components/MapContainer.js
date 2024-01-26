@@ -30,6 +30,8 @@ const MapContainer = () => {
             mapContainerStyle={mapContainerStyle}
             zoom={10}
             center={center}
+            // Rob to find API docs 
+
         >
             <Marker position={center} />
         </GoogleMap>
