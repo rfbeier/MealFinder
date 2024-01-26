@@ -7,7 +7,7 @@ import location_data_raw from './Components/location_data_raw';
 import './Components/styles.css'
 
 const App = () => {
-  const [ locationData, setLocationData ] = useState(location_data_raw);
+  const [ locationData ] = useState(location_data_raw);
 
   const locationCards = [];
   locationData.forEach((locationObj) => {
