@@ -27,7 +27,7 @@ const App = () => {
       >
         <Toolbar>
           <Typography variant="h6" color="inherit" noWrap>
-            MealFinder and key: {process.env.ROB_TEST_VAR} - before
+            MealFinder and key: {process.env.REACT_APP_GOOGLE_MAPS_KEY} - before
           </Typography>
         </Toolbar>
       </AppBar>
